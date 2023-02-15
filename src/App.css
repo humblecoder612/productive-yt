@@ -1,38 +1,125 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,700&family=Teko:wght@300&display=swap');
+
+:root{
+  --red: #C70039;
+  --green : #AFE1AF;
+  --blue : #00FFFF;
+}
+
+body{
+  background:url('./bg.gif') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  gap: 10%;
+  grid-template-areas:
+    'header header header header header setting'
+    'main main main main main right ';
+  padding: 10px;
+}
+
+.grid-item{
+  text-align: center;
+}
+.setting{grid-area: setting; 
+  height: 100%;
+  width: 100%;}
+.header{grid-area: header;}
+
+.youtube{ grid-area: main;
+}
+
+.pomo{ 
+grid-area: right;
+height: 14vw;
+  width: 25vw;
+}
+
+input {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1vw #ffffff;
+  color: #1abfd4;
+  filter: drop-shadow(1px 1px 1px #3c1f52);
+  margin-top: 1%;
+  padding: 0.75% 3%;
+  width: 50%;
+  box-shadow: 0 2px 0 black;
+  font-family: 'Teko', sans-serif;
+  font-size: large;
+  text-align: center;
+  outline: none;
+}
+input::placeholder{
+  color: rgb(7, 183, 236);
+}
+input:focus::placeholder {
+  color: transparent;
+}
+
+
+
+main{
+  padding-top: 10%;
+  max-width: 30%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+iframe{
+  height: 28vw;
+  width: 50vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  display: inline;
+  width: 20%;
+  cursor: pointer;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+button.with-text
+{
+  margin-top: 1%;
+  padding: 0.75% 3%;
+  width: 60%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: inline-flex;
 }
 
-.App-link {
-  color: #61dafb;
+button.with-text svg{
+  width: 40px;
+  float: left;
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+button.button-search svg{
+  width: 30px;
+  float: left;
+  margin-right: 5px;
+}
+
+label{
+  display: block;
+  margin-bottom: 1%;
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-family: 'Teko', sans-serif;
+  font-size: x-large;
+  color: beige;
+}
+
+button.media-button{
+  width: 8vw;
+  border-radius: 10px;
+  padding: 1px 20px;
 }
