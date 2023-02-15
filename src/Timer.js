@@ -4,8 +4,6 @@ import PlayButton from './PlayButton';
 import PauseButton from './PauseButton';
 import { useState, useContext, useEffect, useRef } from 'react';
 import SettingContext from './SettingContext';
-import ForwardButton from './ForwardButton';
-import BackwardButton from './BackwardButton';
 
 
 function Timer() {
@@ -28,9 +26,11 @@ function Timer() {
         if(modeRef.current==='break')
         {
             playerRun();
+            context.setdisable(true);
         }
         else{
             playerStop();
+            context.setdisable(false);
         }
     }
 
@@ -65,7 +65,7 @@ function Timer() {
             if (secondLeftRef.current === 0) {
                 return switchMode();
             } tick();
-        }, 1000);
+        }, 100);
         return ()=>clearInterval(Interval);
     }, [context]);
 

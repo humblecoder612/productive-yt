@@ -32,7 +32,7 @@ function Youtube() {
 
     return (
         <div>
-        <div style={{pointerEvents:'none'}}>
+        <div style={context.disable ? {} : {pointerEvents:'none'}}>
         <iframe id="player" title="YouTube Playlist" src={base+id+'&enablejsapi=1&controls=0?rel=0'} frameborder="0" allowfullscreen allow='autoplay'></iframe>
         </div>
         <BackwardButton onClick={()=>{var frame = document.getElementById("player"); frame.contentWindow.postMessage(
