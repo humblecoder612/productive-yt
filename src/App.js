@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="grid-container">
       <div className="grid-item header">
-      <Popup
+      <Popup className='mypop'
     trigger={open => (
       <button className="button">About</button>
     )}
