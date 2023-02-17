@@ -52,7 +52,6 @@ input {
   font-size: large;
   text-align: center;
   outline: none;
-  float: center;
 }
 input::placeholder{
   color: rgb(7, 183, 236);
@@ -68,7 +67,7 @@ button.button
   color: rgba(255, 255, 255, 0.8);
   border: 0;
   float:left;
-  width: 40%;
+  width: 20%;
   cursor: pointer;
   font-size: 190%;
   padding-top: 1%;
