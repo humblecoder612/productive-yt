@@ -60,7 +60,18 @@ input:focus::placeholder {
   color: transparent;
 }
 
-
+button.button
+{
+  font-family: 'Teko', sans-serif;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  float:left;
+  width: 40%;
+  cursor: pointer;
+  font-size: 190%;
+  padding-top: 1%;
+}
 
 main{
   padding-top: 10%;
@@ -91,8 +102,10 @@ button.with-text
   padding: 0.75% 3%;
   width: 60%;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 150%;
+  font-family: 'Teko', sans-serif;
   display: inline-flex;
+
 }
 
 button.with-text svg{
@@ -123,3 +136,15 @@ button.media-button{
   border-radius: 10px;
   padding: 1px 20px;
 }
+
+
+#popup-2.popup-content{
+  margin: auto;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  width: 50%;
+  padding: 5px;
+  border-color: transparent;
+	box-shadow: inset 0 0 2000px rgba(47, 116, 206, 0.5);
+}
+

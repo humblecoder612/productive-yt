@@ -65,7 +65,7 @@ function Timer() {
             if (secondLeftRef.current === 0) {
                 return switchMode();
             } tick();
-        }, 1000);
+        }, 100);
         return ()=>clearInterval(Interval);
     }, [context]);
 
