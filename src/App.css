@@ -52,6 +52,7 @@ input {
   font-size: large;
   text-align: center;
   outline: none;
+  float: center;
 }
 input::placeholder{
   color: rgb(7, 183, 236);
@@ -99,18 +100,19 @@ button{
 button.with-text
 {
   margin-top: 1%;
-  padding: 0.75% 3%;
+  padding: 0.75% 12%;
   width: 60%;
   border-radius: 10px;
-  font-size: 150%;
+  font-size: 160%;
   font-family: 'Teko', sans-serif;
   display: inline-flex;
+  float: center;
 
 }
 
 button.with-text svg{
   width: 40px;
-  float: left;
+  float: center;
   margin-right: 5px;
 }
 
